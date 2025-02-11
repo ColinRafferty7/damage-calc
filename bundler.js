@@ -48,7 +48,7 @@ class Bundler {
       throw err;
     }
   }
-
+// comment
   async bundle(bundled, output = 'production.min.js') {
     bundled = babel.transformSync(bundled, config).code;
     bundled = (await terser.minify(bundled)).code;
